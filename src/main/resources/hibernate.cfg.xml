@@ -17,5 +17,7 @@
         <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL10Dialect</property>
 
         <mapping class="ru.job4j.model.Candidate" />
+        <mapping class="ru.job4j.model.CarBrand" />
+        <mapping class="ru.job4j.model.CarModel" />
     </session-factory>
 </hibernate-configuration>
