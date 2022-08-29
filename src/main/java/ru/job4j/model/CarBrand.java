@@ -21,7 +21,7 @@ public class CarBrand {
 
     private String name;
 
-    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
+    @OneToMany(orphanRemoval = true, mappedBy = "brand")
     @ToString.Exclude
     private List<CarModel> models = new ArrayList<>();
 

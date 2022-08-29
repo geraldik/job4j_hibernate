@@ -20,6 +20,10 @@ public class CarModel {
 
     private String name;
 
+    @ManyToOne
+    @JoinColumn(name = "brand_id")
+    private CarBrand brand;
+
     public static CarModel of(String name) {
         CarModel model = new CarModel();
         model.name = name;
